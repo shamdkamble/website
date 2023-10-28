@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Web Entry</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="dark-web-container">
+        <button id="dive-in" onclick="showBoat()">Dive InTo The DarkWorld</button>
+        <div class="underwater">
+            <div class="boat" id="boat">
+              <img src="boat.jpg">
+            </div>
+        </div>
+        <div class="secret-code" id="secret-code">
+          <div class="boat" id="boat2"></div>
+          <input type="password" id="code-input" placeholder="Enter Secret Code">
+          <button onclick="stopAnimation(); checkCode()">Enter</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

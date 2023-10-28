@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+.dark-web-container {
+    text-align: center;
+}
+
+#dive-in {
+    font-size: 24px;
+    padding: 20px 50px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.underwater {
+    display: none;
+    background-image: url('underwater.jpg');
+    background-size: cover;
+    width: 800px;
+    height: 600px;
+    margin: 20px auto;
+    position: relative;
+}
+
+.boat {
+    background-image: url('small-boat.png');
+    background-size: cover;
+    width: 50px; /* Adjust boat size as needed */
+    height: 30px; /* Adjust boat size as needed */
+    position: absolute;
+    bottom: 0;
+    left: -50px; /* Start the boat off-screen */
+    animation: boatAnim 15s ease-in-out infinite;
+}
+
+#secret-code {
+    display: none;
+    margin-top: 20px;
+}
+
+input[type="password"] {
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+#secret-code button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@keyframes boatAnim {
+    0% {
+        left: -50px;
+    }
+    100% {
+        left: 100%; /* Move the boat to the right */
+    }
+}
